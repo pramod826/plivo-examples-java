@@ -36,3 +36,11 @@ public class DialXML {
         
     }
 }
+/*
+This will return XML like this:
+<Response>
+    <Dial action="http://www.youractionurl.com/path" method="GET">
+        <Number>12345678901</Number>
+    </Dial>
+</Response>
+*/
