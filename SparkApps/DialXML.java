@@ -12,7 +12,7 @@ public class DialXML {
 
     public static void main(String[] args) {
         //path with respect to root of the server
-        get(new Route("/hello") {
+        get(new Route("/dialxml") {
             @Override
             public Object handle(Request rqst, Response rspns) {
                 PlivoResponse response = new PlivoResponse();
@@ -37,6 +37,8 @@ public class DialXML {
     }
 }
 /*
+the url for getting the  xml wiil be : http://www.yourserver.com/dialxml 
+
 This will return XML like this:
 <Response>
     <Dial action="http://www.youractionurl.com/path" method="GET">
